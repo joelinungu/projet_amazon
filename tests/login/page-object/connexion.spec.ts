@@ -6,7 +6,7 @@ test.beforeEach(async ({ page }) => {
   await page.getByRole('link', { name: 'Bonjour, Identifiez-vous' }).click();
   
 });                     //fichier .ts
-test('connexion', async ({ Log }) => {
+test('connexion', async ({ Log }) => { 
            //fichier .ts
   await Log.connexion();
 });

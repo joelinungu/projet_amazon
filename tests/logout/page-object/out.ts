@@ -27,10 +27,9 @@ export class Logout {
         await this.page.getByLabel('S\'identifier').click();
    }
     async deconnexion() {
-        //survolage du profil pour trouver le bouton de déconnexion
+        //survolage du profil pour trouver le bouton de déconnexion 
         await this.page.getByRole('link', { name: 'Bonjour marc Compte et listes' }).hover();
-        await this.page.getByRole('link', { name: 'Bonjour marc Compte et listes' }).click();
-        await this.page.waitForSelector('#nav-item-signout');
+        await this.page.getByText('Qui est-ce ? Sélectionnez un profil.Gérer les profils Vos listes d\'envies Votre').isVisible();
         // clic sur le bouton de déconnexion
         await this.page.getByRole('link', { name: 'Déconnexion' }).click();
         await this.page.goto('https://www.amazon.fr/');

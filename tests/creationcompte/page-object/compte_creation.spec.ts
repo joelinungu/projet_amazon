@@ -11,4 +11,5 @@ test.beforeEach(async ({ page }) => {
 test('creation de compte', async ({ Creation_Compte }) => {
            //fichier .ts
   await Creation_Compte.fillRegistrationForm();
+  
 });
