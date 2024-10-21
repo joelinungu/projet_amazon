@@ -23,7 +23,7 @@ export class Login {
     
         // clic sur le bouton de connexion
         await this.page.getByLabel('S\'identifier').click();
-        await this.page.goto('https://www.amazon.fr/?&tag=hydraamazon05-21&ref=pd_sl_781ozcfkw9_e&adgrpid=154637622122&hvpone=&hvptwo=&hvadid=683560492499&hvpos=&hvnetw=g&hvrand=17831401740184783330&hvqmt=e&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9055774&hvtargid=kwd-10573980&hydadcr=&gad_source=1');
+        await this.page.goto('https://www.amazon.fr');
        
    }
 }
