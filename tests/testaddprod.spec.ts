@@ -1,4 +1,4 @@
-import { test } from '../page-object/fixture';
+import { test } from '../tests/fixturegenerale'; // Modifier le chemin vers votre fichier étendu
 
 test('Ajouter un produit au panier ', async ({ Pagetest }) => {
   await Pagetest.navigateToAmazon();
