@@ -23,6 +23,7 @@ export class Login {
     
         // clic sur le bouton de connexion
         await this.page.getByLabel('S\'identifier').click();
-        
+        await this.page.goto("https://www.amazon.fr/", { waitUntil: 'networkidle', timeout: 60000 });
+
    }
 }

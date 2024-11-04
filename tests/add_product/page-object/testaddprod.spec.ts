@@ -1,6 +1,6 @@
-import { test, expect } from '../quantity_basket/fixture2'; // Modifier le chemin vers votre fichier étendu
+import { test, expect } from '../page-object/fixture1'; // Modifier le chemin vers votre fichier étendu
 
-test('Ajouter un produit au panier et modifier la quantité', async ({ Pagetest }) => {
+test('Ajouter un produit au panier ', async ({ Pagetest }) => {
   // Utilisation de la classe Verif (Pagetest) pour effectuer les actions sur la page
   await Pagetest.navigateToAmazon();
 
@@ -18,10 +18,4 @@ test('Ajouter un produit au panier et modifier la quantité', async ({ Pagetest 
 
   // Aller au panier
   await Pagetest.goToCart();
-
-  // Modifier la quantité à 2
-  await Pagetest.updateQuantityTo(2);
-
-  // Vérifier que le sous-total est affiché
-  await Pagetest.verifySubtotalDisplayed();
 });

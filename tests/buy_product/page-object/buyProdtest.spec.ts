@@ -1,5 +1,4 @@
-import { test, expect } from './fixture3'; // Importez votre fichier fixture.ts
-
+import { test, expect } from '../page-object/fixture3'; // Importez votre fichier fixture.ts
 
 test('Recherche et achat de produit ', async ({ Pagetest }) => {
   // Naviguer vers Amazon

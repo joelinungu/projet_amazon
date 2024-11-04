@@ -67,6 +67,11 @@ export class AmazonPurchasePage {
     await this.passwordField.click();
     await this.passwordField.fill(password);
     await this.signInButton.click();
+    await this.emailField.fill(email);
+    await this.continueButton.click();
+    await this.passwordField.click();
+    await this.passwordField.fill(password);
+    await this.signInButton.click();
   }
 
   async enterShippingDetails(phone: string, address: string, postalCode: string, city: string) {
