@@ -1,4 +1,4 @@
-import { test } from '../page-object/fixture'; // Modifier le chemin vers votre fichier étendu
+import { test } from '../page-object/fixture'; 
 
 test('verification filtre', async ({ verif_filtre }) => {
     await verif_filtre.page.goto('https://www.amazon.fr/');

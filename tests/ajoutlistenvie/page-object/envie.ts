@@ -35,8 +35,6 @@ export class AjoutListEnvie {
         await this.search.fill('iphone 16');
         await this.GoButton.click();
         await this.page.locator('.rush-component > .a-link-normal').first().click();
-        await this.page.getByLabel('Ajouter à votre liste').click();
-        
+        await this.page.getByLabel('Ajouter à votre liste').click();   
     }
-
 }
